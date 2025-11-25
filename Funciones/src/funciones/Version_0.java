@@ -9,9 +9,14 @@ import java.util.Scanner;
 /**
  *
  * @author Manuela
+ * @version 0.0
  */
 public class Version_0
 {
+    /**
+     * Uno de los primeros programas que se realizó
+     * @param args 
+     */
     public static void main(String[] args) 
     {
         

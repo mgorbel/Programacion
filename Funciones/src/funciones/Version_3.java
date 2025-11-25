@@ -9,33 +9,64 @@ import java.util.Scanner;
 /**
  *
  * @author Manuela
+ * @version 0.3
  */
 public class Version_3 
 {
+        /**
+     * Función que realiza la suma de 2 números y devuelve su resultado
+     * @param _operando1 primer numero de la suma
+     * @param _operando2 segundo número de la suma
+     * @return resultado de la suma de los 2 parámetros de entrada
+     */
     public static int sumar( int _operando1, int _operando2)
     {
         return( _operando1 + _operando2) ;
     }
 
+    /**
+     * Función que realiza la resta de 2 números y devuelve su resultado
+     * @param _operando1  primer numero de la resta
+     * @param _operando2  segundo número de la resta
+     * @return resultado de la resta de los 2 parámetros de entrada
+     */
     public static int restar( int _operando1, int _operando2)
     {
         return( _operando1 - _operando2) ;
     }
     
+    /**
+     * Función que realiza la multiplicación de 2 números y devuelve su resultado
+     * @param _operando1  primer numero de la multiplicación
+     * @param _operando2  segundo número de la multiplicación
+     * @return resultado de la multiplicación de los 2 parámetros de entrada 
+     */
     public static int multiplicar( int _operando1, int _operando2)
     {
         return( _operando1 * _operando2) ;
     }
     
-    public static double dividir( float _operando1, float _operando2)
+    /**
+     * Función que realiza la división de 2 números y devuelve su resultado
+     * @param _operando1  dividendo de la división
+     * @param _operando2  divisor de la división
+     * @return cociente de la división, devuelve 0 si el divisor es 0
+     */
+    public static float dividir( float _operando1, float _operando2)
     {
-        double resultado = 0 ;
+        float resultado = 0 ;
         
-        if( _operando2 !=0 )   resultado = (double)( _operando1 / _operando2);
+        if( _operando2 !=0 )   resultado = (float)( _operando1 / _operando2);
         
         return( resultado) ;
     }
     
+    /**
+     * Función que realiza el módulo de 2 números y devuelve su resultado
+     * @param _operando1  dividendo de la división
+     * @param _operando2  divisor de la división
+     * @return resto de la división, devuelve 0 si el divisor es 0
+     */
     public static int modulo( int _operando1, int _operando2)
     {
         int resultado = 0 ;
@@ -46,6 +77,9 @@ public class Version_3
     }
         
     
+    /**
+     * Muestra el menú de las disitncas operaciones que puede solicitar el usuario
+     */
     public static void menu()
     {
         System.out.println("------------------ VERSION 3 ------------------------");
@@ -59,6 +93,14 @@ public class Version_3
         System.out.print("Opcion: ");
     }
     
+    /**
+     * una calculadora simple que ejecuta una operación matemática básica 
+     * entre dos números enteros, y la opción seleccionada.
+     * @param _opcion Un código que indica la operación a realizar (1 para suma,
+     * 2 para resta, 3 para multiplicación, 4 para división, 5 para módulo)
+     * @param operando1  El primer número de la operación
+     * @param operando2  El segundo número de la operación
+     */
     public static void realizarOperacion( int _opcion, int operando1, int operando2 )
     {
         //int operando1, operando2 ;
@@ -100,6 +142,9 @@ public class Version_3
     
     /**
      * Función principal del programa Versión 3
+     * gestiona la interacción con el usuario, la lectura de datos, 
+     * y el flujo continuo de la aplicación hasta que el usuario decide 
+     * finalizarla
      * @param args 
      */
     public static void main(String[] args) 
