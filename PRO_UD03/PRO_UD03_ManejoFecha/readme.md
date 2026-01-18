@@ -3,13 +3,13 @@
 #### java.time.LocalDateTime
 Es una clase inmutable que representa la combinación de una fecha y una hora (ej. 2026-01-18T18:45).
 
-   * Lo que NO tiene: No contiene información de zona horaria (offset). Es solo una representación de "fecha y hora de pared".
+   * Lo que NO tiene: No contiene información de zona horaria (offset). Es solo una representación de "fecha y hora de reloj".
    * Uso: Ideal para representar eventos locales, como "La clase empieza a las 09:00 el 20 de febrero".
    * Métodos comunes: * now(): Obtiene la fecha/hora actual.
 
        - of(año, mes, día, hora, minuto): Crea una instancia específica.
        - plusDays(n) / minusHours(n): Devuelve una nueva instancia con el tiempo modificado.
-       - 
+         
 #### java.time.Month
 Es un enum que representa los 12 meses del año (del 1 al 12).
 
