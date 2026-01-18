@@ -44,7 +44,7 @@ Es un conjunto de campos estándar para acceder a partes específicas de una fec
     * Uso: Se usa con el método .get().
     * Ejemplo: fecha.get(ChronoField.DAY_OF_WEEK); (Devuelve un número que representa el día de la semana).
 
-    ``` Java
+``` Java
     
 // 1. Crear un LocalDateTime
 LocalDateTime ahora = LocalDateTime.now();
