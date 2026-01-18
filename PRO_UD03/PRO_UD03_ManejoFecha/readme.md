@@ -1,4 +1,4 @@
-### Ejemplo del manejo de las clases:
+### Ejemplo del manejo de las clases sobre fechas:
 
 #### java.time.LocalDateTime
 Es una clase inmutable que representa la combinación de una fecha y una hora (ej. 2026-01-18T18:45).
